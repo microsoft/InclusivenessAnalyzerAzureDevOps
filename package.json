@@ -1,0 +1,42 @@
+{
+  "name": "InclusivenessAnalyzer",
+  "version": "1.0.0",
+  "description": "Azure DevOps extension that checks code and docs for offensive / exclusive terms and provides warnings.",
+  "main": "src/InclusivenessAnalyzer/action.js",
+  "scripts": {
+    "dev": "cross-env GITHUB_WORKSPACE=src/InclusivenessAnalyzer/tests/data INPUT_EXCLUDETERMS=he,she node src/InclusivenessAnalyzer/action.js",
+    "prepare": "ncc build src/InclusivenessAnalyzer/action.js -o src/InclusivenessAnalyzer --source-map --license licenses.txt",
+    "build": "ncc build src/InclusivenessAnalyzer/action.js -o src/InclusivenessAnalyzer",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "tfx extension create --manifest-globs vss-extension.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/InclusivenessAnalyzerAzureDevOps/InclusivenessAnalyzerAzureDevOps.git"
+  },
+  "keywords": [
+    "inclusive",
+    "inclusion",
+    "D&I"
+  ],
+  "author": "Microsoft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microsoft/InclusivenessAnalyzerAzureDevOps/issues"
+  },
+  "homepage": "https://github.com/microsoft/InclusivenessAnalyzerAzureDevOps#readme",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.0.0-preview"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.18",
+    "@types/q": "^1.5.5",
+    "@vercel/ncc": "^0.34.0",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.0.0",
+    "sync-request": "^6.1.0",
+    "tfx-cli": "^0.12.0",
+    "ts-node": "^10.9.1"
+  }
+}

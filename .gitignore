@@ -350,4 +350,10 @@ MigrationBackup/
 .ionide/
 
 node_modules/
-*.js
+*.vsix
+dist/
+.taskkey
+.DS_Store
+/src/InclusivenessAnalyzer/exec-child.js
+/src/InclusivenessAnalyzer/index.js
+/src/InclusivenessAnalyzer/lib.json

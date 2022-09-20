@@ -1,14 +1,25 @@
-# Project
+# Inclusiveness Analyzer
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+> Make your code inclusive!
 
-As the maintainer of this project, please make a few updates:
+The Inclusiveness Analyzer is a GitHub action that checks your repository for offensive / exclusive terms.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+It also provides context on why a word is exclusive and suggests alternate terms that can be used instead.
+
+## Inclusiveness Analyzer for other Platforms
+
+* [Inclusiveness Analyzer GitHub Action](https://github.com/microsoft/InclusivenessAnalyzer)
+* [Inclusiveness Analyzer Visual Studio Extension](https://github.com/microsoft/InclusivenessAnalyzerVisualStudio)
+
+## About the project
+
+As humans, we hold many unconscious and implicit biases that we rely on to react quickly to our environment and any novel stimuli. However, since the unconscious brain processes and reacts with speed, we sometimes speak quickly without thinking, which may cause us to slip offensive terms and stereotypes although we mean no malice.
+
+In order to confront these biases that we see in ourselves and others, we must rewire ourselves to regularly use inclusive practices (such as the words we speak). If you don't intentionally and proactively include, you will unintentionally exclude.
+
+> Join our effort to push out exclusive terms and make inclusive terms a part of our everyday vocabulary!
+
+Help us confront these biases by pushing out exclusive terms and making inclusive terms a part of our everyday vocabulary!
 
 ## Contributing
 

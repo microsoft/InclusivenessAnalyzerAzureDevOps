@@ -1,20 +1,12 @@
-import { match } from "assert";
-
 const fs = require('fs');
 
- type Match = {
-    file: string,
-    number: Number,
-    content: string,
-};
+function checkFileForPhrase(file, phrase) {
 
-function checkFileForPhrase(file: string, phrase: string) {
-
-    var lines: Match [] = [];
+    var lines = [];
     var content = fs.readFileSync(file, 'utf-8').toString().split("\n");
-    content.forEach((line: string, index: Number) => {
+    content.forEach((line, index) => {
         if(line.match(phrase)) {
-            var match:Match = {
+            var match = {
                 file: file,
                 number: index,
                 content: line
