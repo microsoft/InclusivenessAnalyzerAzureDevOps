@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "acab8595-f376-4220-87bd-6efaef74e5b5",
+    "name": "InclusivenessAnalyzer",
+    "friendlyName": "Inclusiveness Analyzer",
+    "description": "Inclusiveness Analyzer",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "cuixi1222",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "inputs": [],
+    "execution": {
+        "Node10": {
+            "target": "index.js"
+        }
+    }
+}

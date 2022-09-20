@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "InclusivenessAnalyzer",
+    "name": "InclusivenessAnalyzer Tools",
+    "version": "0.0.1",
+    "publisher": "SecIdentityTech",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for TestAnalyzer",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "InclusivenessAnalyzer"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "InclusivenessAnalyzer",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "InclusivenessAnalyzer"
+            }
+        }
+    ]
+}
