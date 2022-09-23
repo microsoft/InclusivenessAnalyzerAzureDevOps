@@ -33,8 +33,4 @@ function fail(message) {
     core.setResult(core.TaskResult.Failed, message);
 }
 
-function succeededWithIssues(message) {
-    core.setResult(core.TaskResult.SucceededWithIssues, message);
-}
-
-module.exports = { info, warn, debug, fail, succeededWithIssues };
+module.exports = { info, warn, debug, fail };

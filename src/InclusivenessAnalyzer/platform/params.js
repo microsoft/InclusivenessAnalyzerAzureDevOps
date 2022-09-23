@@ -12,13 +12,4 @@ function readBoolean(name) {
     return core.getBoolInput(name);
 }
 
-function getWorkingDirectory(){
-    var dir = core.getVariable('System.DefaultWorkingDirectory');
-
-    if(dir === undefined){ //Could be running locally, try reading from env.
-        dir = process.env.GITHUB_WORKSPACE;
-    }
-    return dir;
-}
-
-module.exports = { read, readBoolean, getWorkingDirectory };
+module.exports = { read, readBoolean };
