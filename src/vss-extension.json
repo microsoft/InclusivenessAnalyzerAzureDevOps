@@ -2,26 +2,64 @@
     "manifestVersion": 1,
     "id": "InclusivenessAnalyzerAzureDevOps",
     "name": "Inclusiveness Analyzer",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "publisher": "InclusivenessAnalyzer",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
     ],    
-    "description": "Azure DevOps extension that checks code and docs for offensive / exclusive terms and provides warnings.",
+    "description": "Make your code inclusive! This extension checks code and docs on every commit for offensive and exclusive terms like blacklist and suggests alternatives.",
     "categories": [
         "Azure Pipelines"
     ],
-    "galleryFlags": [
-        "Preview"
+    "tags": [
+        "inclusive",
+        "d&i",
+        "inclusion"
     ],
+    "galleryFlags": [
+        "Public"
+    ],
+    "links": {
+        "home": {
+            "uri": "https://microsoft.github.io/InclusivenessAnalyzer/"
+        },
+        "getstarted": {
+            "uri": "https://microsoft.github.io/InclusivenessAnalyzer/azuredevopsextension"
+        },
+        "learn": {
+            "uri": "https://microsoft.github.io/InclusivenessAnalyzer/azuredevopsextension"
+        },
+        "support": {
+            "uri": "https://github.com/microsoft/InclusivenessAnalyzerAzureDevOps/issues"
+        },
+        "repository": {
+            "uri": "https://github.com/microsoft/InclusivenessAnalyzerAzureDevOps"
+        },
+        "issues": {
+            "uri": "https://github.com/microsoft/InclusivenessAnalyzerAzureDevOps/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/microsoft/InclusivenessAnalyzerAzureDevOps"
+    },
     "icons": {
         "default": "images/extension-icon.png"        
+    },
+    "content": {
+        "details": {
+            "path": "docs/overview.md"
+        }
     },
     "files": [
         {
             "path": "InclusivenessAnalyzer"
+        },
+        {
+            "path": "images",
+            "addressable": true
         }
     ],
     "contributions": [
