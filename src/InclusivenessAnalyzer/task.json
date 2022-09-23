@@ -24,7 +24,7 @@
         {
             "name": "excludeUnchangedFiles",
             "type": "boolean",
-            "label": "Exclude unchanged files",
+            "label": "Limit scan to files changed in the latest commit",
             "defaultValue": true,
             "required": false,
             "helpMarkDown": "Only scan files added or modified in last commit when checkout step has 'with: fetch-depth: 2' configured"
@@ -32,14 +32,14 @@
         {
             "name": "excludeFromScan",
             "type": "string",
-            "label": "Exclude file patterns",
+            "label": "Files and directory to exclude from scan",
             "required": false,
             "helpMarkDown": "Comma separated list of file patterns to exclude from analysis"
         },
         {
             "name": "excludeTerms",
             "type": "string",
-            "label": "Exclude non-inclusive Terms",
+            "label": "Non-inclusive terms to exclude from scan",
             "required": false,
             "helpMarkDown": "Comma separated list of non-inclusive terms to exclude from analysis"
         }
