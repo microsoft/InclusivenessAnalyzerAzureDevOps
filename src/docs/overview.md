@@ -7,7 +7,7 @@ Join our effort to push out exclusive terms and make inclusive terms a part of o
 
 # How it works
 
-This Azure DevOps extension provides a build task that you can add in your build definition. You'll benefit from the automated detection of non-inclusive terms that could make their way into your application, products and your docs.
+This Azure DevOps extension provides a build task that you can add in your build definition. You'll benefit from the automated detection of non-inclusive terms that could make their way into your application and your docs.
 
 ![Screenshot showing Inclusiveness Analyzer warning of the work blacklist being used.](images/screenshot1.png)
 
