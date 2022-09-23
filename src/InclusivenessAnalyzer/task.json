@@ -12,7 +12,38 @@
         "Minor": 0,
         "Patch": 0
     },
-    "inputs": [],
+    "inputs": [
+        {
+            "name": "failStep",
+            "type": "boolean",
+            "label": "failStep",
+            "defaultValue": false,
+            "required": false,
+            "helpMarkDown": "Fails the step if a non-inclusive term is found"
+        },
+        {
+            "name": "excludeUnchangedFiles",
+            "type": "boolean",
+            "label": "excludeUnchangedFiles",
+            "defaultValue": true,
+            "required": false,
+            "helpMarkDown": "Only scan files added or modified in last commit when checkout step has 'with: fetch-depth: 2' configured"
+        },
+        {
+            "name": "excludeFromScan",
+            "type": "string",
+            "label": "excludeFromScan",
+            "required": false,
+            "helpMarkDown": "Comma separated list of file patterns to exclude from analysis"
+        },
+        {
+            "name": "excludeTerms",
+            "type": "string",
+            "label": "excludeTerms",
+            "required": false,
+            "helpMarkDown": "Comma separated list of file patterns to exclude from analysis"
+        }
+    ],
     "execution": {
         "Node10": {
             "target": "index.js"
