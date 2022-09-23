@@ -4,7 +4,7 @@
   "description": "Azure DevOps extension that checks code and docs for offensive / exclusive terms and provides warnings.",
   "main": "src/InclusivenessAnalyzer/action.js",
   "scripts": {
-    "dev": "cross-env GITHUB_WORKSPACE=src/InclusivenessAnalyzer/tests/data INPUT_EXCLUDETERMS=he,she node src/InclusivenessAnalyzer/action.js",
+    "dev": "cross-env GITHUB_WORKSPACE=src/InclusivenessAnalyzer/tests/data INPUT_EXCLUDETERMS=he,she INPUT_excludeUnchangedFiles=true node src/InclusivenessAnalyzer/action.js",
     "prepare": "ncc build src/InclusivenessAnalyzer/action.js -o src/InclusivenessAnalyzer --source-map --license licenses.txt",
     "build": "ncc build src/InclusivenessAnalyzer/action.js -o src/InclusivenessAnalyzer",
     "test": "echo \"Error: no test specified\" && exit 1",
