@@ -9,6 +9,6 @@ Join our effort to push out exclusive terms and make inclusive terms a part of o
 
 This Azure DevOps extension provides a build task that you can add in your build definition. You'll benefit from the automated detection of non-inclusive terms that could make their way into your application, products and your docs.
 
-![Screenshot showing Inclusiveness Analyzer warning of the work blacklist being used.](/images/screenshot1.png)
+![Screenshot showing Inclusiveness Analyzer warning of the work blacklist being used.](images/screenshot1.png)
 
 Inclusiveness analyzer is also available as a GitHub Action as well as a Visual Studio extension and a nuget package (for C# code). Check out the [Inclusiveness Analyzer site](https://microsoft.github.io/InclusivenessAnalyzer/) for more details.

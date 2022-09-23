@@ -4,7 +4,7 @@
     "name": "InclusivenessAnalyzer",
     "friendlyName": "Inclusiveness Analyzer",
     "description": "Inclusiveness Analyzer",
-    "helpMarkDown": "As humans, we hold many unconscious and implicit biases that we rely on to react quickly to our environment and any novel stimuli. However, since the unconscious brain processes and reacts with speed, we sometimes speak quickly without thinking, which may cause us to slip offensive terms and stereotypes although we mean no malice. In order to confront these biases that we see in ourselves and others, we must rewire ourselves to regularly use inclusive practices (such as the words we speak). If you don't intentionally and proactively include, you will unintentionally exclude. Join our effort to push out exclusive terms and make inclusive terms a part of our everyday vocabulary!",
+    "helpMarkDown": "Make your code inclusive! This extension checks code and docs on every commit for offensive and exclusive terms like blacklist and suggests alternatives.",
     "category": "Utility",
     "author": "Microsoft",
     "version": {

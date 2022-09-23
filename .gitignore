@@ -354,6 +354,9 @@ node_modules/
 dist/
 .taskkey
 .DS_Store
-/src/InclusivenessAnalyzer/exec-child.js
-/src/InclusivenessAnalyzer/index.js
-/src/InclusivenessAnalyzer/lib.json
+src/InclusivenessAnalyzer/exec-child.js
+src/InclusivenessAnalyzer/index.js
+src/InclusivenessAnalyzer/lib.json
+src/InclusivenessAnalyzer/sourcemap-register.js
+src/InclusivenessAnalyzer/index.js.map
+src/licenses.txt

@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "InclusivenessAnalyzerAzureDevOps",
     "name": "Inclusiveness Analyzer",
-    "version": "0.0.4",
+    "version": "0.0.7",
     "publisher": "InclusivenessAnalyzer",
     "targets": [
         {

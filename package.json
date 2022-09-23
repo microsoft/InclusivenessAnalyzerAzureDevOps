@@ -26,17 +26,14 @@
   },
   "homepage": "https://github.com/microsoft/InclusivenessAnalyzerAzureDevOps#readme",
   "dependencies": {
-    "azure-pipelines-task-lib": "^4.0.0-preview"
+    "azure-pipelines-task-lib": "^4.0.0-preview",
+    "glob": "^8.0.3",
+    "isbinaryfile": "^5.0.0"
   },
   "devDependencies": {
-    "@types/mocha": "^9.1.1",
-    "@types/node": "^18.7.18",
-    "@types/q": "^1.5.5",
     "@vercel/ncc": "^0.34.0",
     "cross-env": "^7.0.3",
     "mocha": "^10.0.0",
-    "sync-request": "^6.1.0",
-    "tfx-cli": "^0.12.0",
-    "ts-node": "^10.9.1"
+    "tfx-cli": "^0.12.0"
   }
 }
