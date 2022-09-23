@@ -15,4 +15,4 @@ jobs:
       - name: Rebuild the dist directory
         run: npm run prepare
       - name: Inclusiveness Analyzer action step
-        run: npm run local
+        run: npm run dev
