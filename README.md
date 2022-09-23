@@ -6,6 +6,10 @@ The Inclusiveness Analyzer is a GitHub action that checks your repository for of
 
 It also provides context on why a word is exclusive and suggests alternate terms that can be used instead.
 
+## Install Guide
+
+Please view the [Inclusiveness Analyzer Install Guide](https://microsoft.github.io/InclusivenessAnalyzer/azuredevopsextension) for installation and configuration instructions.
+
 ## Inclusiveness Analyzer for other Platforms
 
 * [Inclusiveness Analyzer GitHub Action](https://github.com/microsoft/InclusivenessAnalyzer)
@@ -20,6 +24,28 @@ In order to confront these biases that we see in ourselves and others, we must r
 > Join our effort to push out exclusive terms and make inclusive terms a part of our everyday vocabulary!
 
 Help us confront these biases by pushing out exclusive terms and making inclusive terms a part of our everyday vocabulary!
+
+## Developer Guide
+
+### Local Development
+
+* Clone the repository
+* Run `yarn install` to install all dependencies.
+* Run `yarn run dev` to run locally with sample data. See package.json for dev config and params.
+
+> Tip: In VSCode, open package.json, hover over 'Scripts' (line 6) and click on Debug and select Dev to interactively debug the code.
+
+### Manual Publishing to Visual Studio Marketplace
+
+Run the following commands when you are in the /src folder. The extension packaging does not work when running from the root of the repository.
+
+* Increment build number in `package.json`, `task.json` and 'vss-extension.json'
+* Run `yarn run prepare`
+* Run `yarn run build`
+* Run `tfx extension create --manifest-globs vss-extension.json`
+* Upload the file to the VS Marketplace.
+
+Note: If you make changes to the task.json, you might need to delete and re-install the extension on the Azure DevOps Organization to see updates.
 
 ## Contributing
 

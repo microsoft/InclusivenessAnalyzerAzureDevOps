@@ -1,6 +1,6 @@
 {
   "name": "InclusivenessAnalyzer",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "Azure DevOps extension that checks code and docs for offensive / exclusive terms and provides warnings.",
   "main": "src/InclusivenessAnalyzer/action.js",
   "scripts": {

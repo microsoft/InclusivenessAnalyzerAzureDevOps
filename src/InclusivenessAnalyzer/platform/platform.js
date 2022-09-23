@@ -12,15 +12,21 @@ function getWorkingDirectory(){
     return dir;
 }
 
+function equalsIgnoringCase(text, other) {
+    return text.localeCompare(other, undefined, { sensitivity: 'base' }) === 0;
+}
+
 // Azure DevOps supports three states. This method allows custom logic for ADO.
 function logBuildFailure(message){
-
     const buildStatusOnNonInclusiveTerm = params.read('buildStatusOnNonInclusiveTerm');
 
-    if (buildStatusOnNonInclusiveTerm === 'warning') {
+    if(buildStatusOnNonInclusiveTerm === undefined){
+        buildStatusOnNonInclusiveTerm === 'warning';
+    }
+    if (equalsIgnoringCase(buildStatusOnNonInclusiveTerm, 'warning')) {
         core.setResult(core.TaskResult.SucceededWithIssues, message);
     }
-    else if (buildStatusOnNonInclusiveTerm === 'failed') {
+    else if (equalsIgnoringCase(buildStatusOnNonInclusiveTerm, 'failed')) {
         core.setResult(core.TaskResult.Failed, message);
     }
 }
