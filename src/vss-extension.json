@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "InclusivenessAnalyzerAzureDevOps",
     "name": "Inclusiveness Analyzer",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "InclusivenessAnalyzer",
     "targets": [
         {
@@ -70,7 +70,8 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "InclusivenessAnalyzer"
+                "name": "InclusivenessAnalyzer",
+                "icon": "images/extension-icon.png"
             }
         }
     ]
