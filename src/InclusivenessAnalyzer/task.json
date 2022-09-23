@@ -16,7 +16,7 @@
         {
             "name": "failStep",
             "type": "boolean",
-            "label": "failStep",
+            "label": "Fail task if non-inclusive terms are found",
             "defaultValue": false,
             "required": false,
             "helpMarkDown": "Fails the step if a non-inclusive term is found"
@@ -24,7 +24,7 @@
         {
             "name": "excludeUnchangedFiles",
             "type": "boolean",
-            "label": "excludeUnchangedFiles",
+            "label": "Exclude unchanged files",
             "defaultValue": true,
             "required": false,
             "helpMarkDown": "Only scan files added or modified in last commit when checkout step has 'with: fetch-depth: 2' configured"
@@ -32,16 +32,16 @@
         {
             "name": "excludeFromScan",
             "type": "string",
-            "label": "excludeFromScan",
+            "label": "Exclude file patterns",
             "required": false,
             "helpMarkDown": "Comma separated list of file patterns to exclude from analysis"
         },
         {
             "name": "excludeTerms",
             "type": "string",
-            "label": "excludeTerms",
+            "label": "Exclude non-inclusive Terms",
             "required": false,
-            "helpMarkDown": "Comma separated list of file patterns to exclude from analysis"
+            "helpMarkDown": "Comma separated list of non-inclusive terms to exclude from analysis"
         }
     ],
     "execution": {
